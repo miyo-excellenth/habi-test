@@ -2,7 +2,7 @@ import { homeActionTypes } from '../actionTypes';
 
 const initialState = {
   modal: {
-    isOpen: true,
+    isOpen: false,
   },
   form: {
     name: '',
