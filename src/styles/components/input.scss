@@ -1,0 +1,35 @@
+.input {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+
+  &--label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 0.9em;
+    transition: all linear 125ms;
+
+    &--active {
+      top: -15px;
+      transform: inherit;
+    }
+  }
+
+  &--field {
+    padding: 5px 10px;
+    max-height: 0;
+    border: none;
+    min-height: 40px;
+    font-size: 1em;
+  }
+
+  &--error {
+    position: absolute;
+    bottom: -13px;
+    left: 10px;
+    font-size: 0.8em;
+  }
+}

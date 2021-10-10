@@ -1,0 +1,54 @@
+[
+  {
+    "description": "",
+    "name": "Primer paso",
+    "path": "/",
+    "inputs": [
+      {
+        "label": "Name",
+        "type": "text",
+        "placeholder": "Nombre",
+        "uniqueKey": "name"
+      }
+    ]
+  },
+  {
+    "description": "",
+    "name": "Segundo paso",
+    "path": "/",
+    "inputs": [
+      {
+        "label": "Correo",
+        "type": "email",
+        "placeholder": "Correo",
+        "uniqueKey": "email"
+      }
+    ]
+  },
+  {
+    "description": "",
+    "name": "Tercer paso",
+    "path": "/",
+    "inputs": [
+      {
+        "label": "Dirección",
+        "type": "text",
+        "placeholder": "Dirección",
+        "uniqueKey": "address"
+      }
+    ]
+  },
+  {
+    "description": "",
+    "name": "Cuarto paso",
+    "path": "/",
+    "inputs": [
+      {
+        "label": "Numero de piso del apartamento",
+        "type": "text",
+        "placeholder": "umero de piso del apartamento",
+        "uniqueKey": "floorNumberApartment"
+      }
+    ]
+  }
+]

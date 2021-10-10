@@ -1,0 +1,34 @@
+@import '../contants';
+
+@mixin modal-mixin(
+  $open: false,
+  $background: $secondary-color,
+  $width: min-content,
+  $max-width: 80%,
+  $min-width: auto,
+  $height: min-content,
+  $max-height: 80%,
+  $min-height: auto
+) {
+  z-index: 20;
+  position: absolute;
+  width: $width;
+  max-width: $max-width;
+  min-width: $min-width;
+  height: $height;
+  max-height: $max-height;
+  min-height: $min-height;
+  background: $background;
+  display: grid;
+  transition: all linear 225ms;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+
+  @if $open {
+    transform: scale(1) translate(-50%, -50%);
+  } @else {
+    transform: scale(0) translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'fonts';
+@import 'contants';
+
+* {
+  font-family: $primary-family;
+  font-size: $default-text-size;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $text-light-color;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: grid;
+  overflow: hidden;
+}
+
+#root {
+  display: grid;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+}

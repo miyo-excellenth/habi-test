@@ -1,0 +1,29 @@
+@import '../contants';
+@import '../mixins/button-mixin';
+
+.button {
+  @include button-mixin(
+    $color: $secondary-color,
+    $border-color: $secondary-color,
+    $background: none,
+    $hover-color: $text-black-color,
+    $hover-border-color: $secondary-color,
+    $hover-background: $secondary-color
+  );
+
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3em;
+  transition: all linear 105ms;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
